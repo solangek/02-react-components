@@ -1,8 +1,4 @@
-
-
-import Header from "./components/Header";
 import Counter from "./components/Counter";
-
 
 /**
  * The App component is the root component of our application.
