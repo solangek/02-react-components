@@ -12,6 +12,11 @@ import Header from "./Header";
  * @constructor
  */
 function Counter(props) {
+    // Hooks let you use different React features from your components.
+    // You can either use the built-in Hooks or combine them to build your own.
+    // Here is the most common hook: useState
+    // State lets a component “remember” information like user input.
+
     // the function useState returns an array with two elements
     // first element is the current state
     // second element is a function to update the state
@@ -19,7 +24,7 @@ function Counter(props) {
 
     // important note:
     // hooks cannot be used inside if statements or loops
-    // because they are created in fixed order
+    // because they are created in fixed order.
 
     // render function must return a single element
     // a fragment is a combination of multiple elements:
@@ -29,8 +34,8 @@ function Counter(props) {
         <Fragment>
             <Header/>
             <h2>Counter: {count}</h2>
-            <button onClick={() => setCount(count - 1)}> - </button>
-            <button onClick={() => setCount(count + 1)}> + </button>
+            <button onClick={() => setCount(count - 1)}> minus </button>
+            <button onClick={() => setCount(count + 1)}>plus </button>
         </Fragment>
     );
 }
