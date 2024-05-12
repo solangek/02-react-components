@@ -31,12 +31,12 @@ function Counter(props) {
     // we use it to group multiple elements without creating a new element such as a div
 
     return (
-        <Fragment>
+        <>
             <Header/>
             <h2>Counter: {count}</h2>
-            <button onClick={() => setCount(count - 1)}> minus </button>
-            <button onClick={() => setCount(count + 1)}>plus </button>
-        </Fragment>
+            <button onClick={  () => setCount(count - 1)   }> - </button>
+            <button onClick={() => setCount(count + 1)}> + </button>
+        </>
     );
 }
 
